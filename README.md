@@ -73,8 +73,7 @@ To contribute:
 ## 💬 Contact
 
 For any questions, feedback, or inquiries, please reach out to us at:
-- **Email**: support@youragency.com
-- **Website**: [www.youragency.com](http://www.youragency.com)
+- **Email**: peerawitm1xnd@gmail.com
 
 ---
 
