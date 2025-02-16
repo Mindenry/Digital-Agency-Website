@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Digital | Premium Design Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/gsap@3.9.1/dist/ScrollToPlugin.min.js"></script>
+
+    <!-- GSAP และ ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis (Smooth Scrolling) -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+
+    <!-- SplitType (Text Splitting Animation) -->
+    <script src="https://unpkg.com/split-type"></script>
+
+</head>
+<body data-barba="wrapper">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header glassmorphism">
+        <div class="logo">
+            <span class="logo-text">Nexus<span class="highlight">.</span></span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="home">
+        <!-- Hero Section -->
+        <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-title-container">
+            <h1 class="hero-title">
+                <span class="animate-text">We Create</span>
+                <span class="animate-text">Digital</span>
+                <span class="animate-text">Experiences<span class="highlight">.</span></span>
+            </h1>
+        </div>
+        <p class="hero-subtitle animate-fade-up">Innovative design agency crafting premium digital solutions that elevate brands</p>
+        <div class="hero-cta animate-fade-up">
+            <a href="#portfolio" class="btn btn-primary">
+                <span>View Our Work</span>
+                <div class="btn-hover-effect"></div>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+                <span>Get in Touch</span>
+                <div class="btn-hover-effect"></div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="hero-visual">
+        <div class="hero-shape hero-shape-1" data-speed="0.05"></div>
+        <div class="hero-shape hero-shape-2" data-speed="-0.08"></div>
+        <div class="hero-shape hero-shape-3" data-speed="0.1"></div>
+        <div class="hero-particle-container">
+            <div class="hero-particle particle-1"></div>
+            <div class="hero-particle particle-2"></div>
+            <div class="hero-particle particle-3"></div>
+            <div class="hero-particle particle-4"></div>
+            <div class="hero-particle particle-5"></div>
+        </div>
+    </div>
+    
+    <div class="custom-cursor"></div>
+    
+    <div class="scroll-indicator animate-fade-in">
+        <span>Scroll</span>
+        <div class="scroll-line">
+            <div class="scroll-line-inner"></div>
+        </div>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">We transform ideas into <span class="highlight">remarkable digital realities</span></h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At Nexus Digital, we blend creativity with technology to craft memorable digital experiences that captivate audiences and drive results. Our team of designers, developers, and strategists work collaboratively to push boundaries and set new standards in digital innovation.</p>
+                        <p>Founded in 2018, we've partnered with brands across industries to create websites, applications, and digital products that stand out in today's competitive landscape.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="99">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="57">0</span>
+                                <span class="stat-label">Satisfied Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="12">0</span>
+                                <span class="stat-label">Industry Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-wrapper glassmorphism">
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Team collaborating on digital project">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Services</span>
+                    <h2 class="section-title">Elevate your brand with our <span class="highlight">premium services</span></h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glassmorphism">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">UX/UI Design</h3>
+                        <p class="service-description">Creating intuitive and engaging user experiences through thoughtful design and seamless interactions.</p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                    <div class="service-card glassmorphism">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Building robust, scalable, and high-performance websites and applications with cutting-edge technologies.</p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                    <div class="service-card glassmorphism">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Digital Branding</h3>
+                        <p class="service-description">Crafting distinctive brand identities that resonate with audiences and stand out in digital spaces.</p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                    <div class="service-card glassmorphism">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Motion Design</h3>
+                        <p class="service-description">Creating captivating animations and interactive elements that bring digital experiences to life.</p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Work</span>
+                    <h2 class="section-title">Showcasing our <span class="highlight">creative excellence</span></h2>
+                </div>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="app">App Design</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-item-inner glassmorphism">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern e-commerce website design">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Luxury Fashion E-commerce</h3>
+                                <span class="portfolio-category">Web Design</span>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-item-inner glassmorphism">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80" alt="Mobile app interface design">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Health & Wellness App</h3>
+                                <span class="portfolio-category">App Design</span>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-item-inner glassmorphism">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80" alt="Brand identity design">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Organic Food Brand Identity</h3>
+                                <span class="portfolio-category">Branding</span>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-item-inner glassmorphism">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1362&q=80" alt="Corporate website redesign">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Financial Services Portal</h3>
+                                <span class="portfolio-category">Web Design</span>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-item-inner glassmorphism">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1468971050039-be99497410af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Travel app design">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Travel Experience Platform</h3>
+                                <span class="portfolio-category">App Design</span>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-item-inner glassmorphism">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Restaurant brand identity">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Upscale Restaurant Rebranding</h3>
+                                <span class="portfolio-category">Branding</span>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-cta">
+                    <a href="#" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Client Feedback</span>
+                    <h2 class="section-title">What our clients <span class="highlight">say about us</span></h2>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide glassmorphism active">
+                        <div class="testimonial-content">
+                            <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h2c0 2-1 3-3 3m18 0c-3 0-7-1-7-8V5c0-1.25.756-2 2-2h4c1.25 0 2 .75 2 2v6c0 1.25-.75 2-2 2h-2c0 2 1 3 3 3"></path>
+                            </svg>
+                            <p class="testimonial-text">Nexus Digital transformed our online presence with a stunning website that perfectly captures our brand essence. Their attention to detail and innovative approach exceeded our expectations.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Sarah Johnson</h4>
+                                    <span class="author-position">CEO, Elevate Fashion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide glassmorphism ">
+                        <div class="testimonial-content">
+                            <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h2c0 2-1 3-3 3m18 0c-3 0-7-1-7-8V5c0-1.25.756-2 2-2h4c1.25 0 2 .75 2 2v6c0 1.25-.75 2-2 2h-2c0 2 1 3 3 3"></path>
+                            </svg>
+                            <p class="testimonial-text">Working with Nexus Digital was a game-changer for our tech startup. Their team delivered an intuitive, visually striking app that our users love. The collaborative process made everything smooth and enjoyable.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Chen">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">David Chen</h4>
+                                    <span class="author-position">Founder, TechNova</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide glassmorphism">
+                        <div class="testimonial-content">
+                            <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h2c0 2-1 3-3 3m18 0c-3 0-7-1-7-8V5c0-1.25.756-2 2-2h4c1.25 0 2 .75 2 2v6c0 1.25-.75 2-2 2h-2c0 2 1 3 3 3"></path>
+                            </svg>
+                            <p class="testimonial-text">The Nexus team reimagined our brand identity with creativity and strategic insight. The results have been phenomenal—increased engagement, enhanced brand recognition, and a significant boost in conversions.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Olivia Martinez">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Olivia Martinez</h4>
+                                    <span class="author-position">Marketing Director, Harmony Hotels</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev" aria-label="Previous testimonial">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="testimonial-dots"></div>
+                    <button class="testimonial-next" aria-label="Next testimonial">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Let's discuss your <span class="highlight">next project</span></h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item glassmorphism">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="contact-title">Call Us</h3>
+                            <p class="contact-text">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item glassmorphism">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="contact-title">Email Us</h3>
+                            <p class="contact-text">hello@nexusdigital.com</p>
+                        </div>
+                        <div class="contact-item glassmorphism">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="contact-title">Visit Us</h3>
+                            <p class="contact-text">123 Creative St, Digital City</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-container glassmorphism">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Nexus<span class="highlight">.</span></span>
+                    <p class="footer-tagline">Crafting premium digital experiences</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h4 class="footer-nav-title">Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4 class="footer-nav-title">Services</h4>
+                        <ul>
+                            <li><a href="#">UX/UI Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Digital Branding</a></li>
+                            <li><a href="#">Motion Design</a></li>
+                            <li><a href="#">Strategy & Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4 class="footer-nav-title">Connect</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Nexus Digital. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
